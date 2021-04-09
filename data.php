@@ -13,7 +13,7 @@ function get_price($product, $price)
 		$sql = ("SELECT price FROM products WHERE product = '$product'");
 	$result = $conn->query($sql);
 
-        if ($result->num_rows()> 0) 
+        if ($result->num_rows() > 0) 
 	{
 
              while($row = $result->fetch_assoc()) 
