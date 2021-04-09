@@ -24,6 +24,8 @@ function get_price($product, $price)
 		{
                     $p = $row["price"];	
         	}
+	$conn = NULL;
+
 	if ($p == $price) 
   	{
     		return "true";
@@ -33,7 +35,6 @@ function get_price($product, $price)
   		return "false";
 
 	}
-	$conn = NULL;
 
 }
 ?>
