@@ -28,11 +28,11 @@ function get_price($product, $price)
 
 	if ($p == $price) 
   	{
-    		return "true";
+    		return true;
   	}
 	else 
  	{
-  		return "false";
+  		return false;
 
 	}
 
