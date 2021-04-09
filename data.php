@@ -19,22 +19,16 @@ function get_price($product, $price)
 	{
 		$p = null;
 		return NULL;
+		$y = "false";
     	}
 	 else
 		{
                     $p = $row["price"];	
+			return true;
         	}
 
-if ($p == $price) 
-  {
-    return "true";
-  }
-else 
- {
-  return "false";
-
-    $conn->NULL;
- }
+	return $y;
+	$conn = NULL;
 }
 ?>
 
