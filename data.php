@@ -8,7 +8,7 @@ function get_price($product, $price)
 	mysqli_real_connect($con, "patels18.mysql.database.azure.com", "patels18@patels18", "Krishna@0115", "patels18_db", 3306);
 
        $sql = "SELECT price FROM products WHERE product = '$product'";
-       $result = $conn->query($sql);
+       $result = $con->query($sql);
 
         if ($result->num_rows > 0) 
 	{
@@ -24,7 +24,7 @@ function get_price($product, $price)
 		     return NULL;	
         	}
 
-    $conn->close();
+    $con->close();
 
 if ($p == $price) 
   {
